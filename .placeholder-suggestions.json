@@ -1,0 +1,43 @@
+{
+  "MitarbeiterverwaltungDialog.tsx": {
+    "vorname": "z. B. Max",
+    "nachname": "z. B. Müller",
+    "personalnummer": "z. B. MA-2026-001",
+    "abteilung": "Abteilung wählen",
+    "telefon": "z. B. +49 123 456789",
+    "email": "z. B. max.mueller@example.com"
+  },
+  "WerkzeugverwaltungDialog.tsx": {
+    "bezeichnung": "z. B. Akkubohrmaschine",
+    "inventarnummer": "z. B. INV-2026-0042",
+    "kategorie": "Kategorie wählen",
+    "hersteller": "z. B. Bosch",
+    "modell": "z. B. GSR 18V-60 FC",
+    "seriennummer": "z. B. 3165140802345",
+    "kaufdatum": "Wann wurde es gekauft?",
+    "naechste_pruefung": "Nächste Prüfung wählen",
+    "standort": "z. B. Werkstatt Regal B3",
+    "zustand": "Zustand wählen",
+    "anmerkungen": "Besonderheiten, Beschädigungen, Wartungshistorie..."
+  },
+  "AusleiheRueckgabeDialog.tsx": {
+    "mitarbeiter": "Welcher Mitarbeiter?",
+    "werkzeug": "Welches Werkzeug?",
+    "ausleihdatum": "Wann ausgeliehen?",
+    "geplante_rueckgabe": "Geplantes Rückgabedatum",
+    "einsatzort": "z. B. Baustelle Hauptstr. 42",
+    "rueckgabedatum": "Rückgabedatum wählen",
+    "zustand_rueckgabe": "Zustand wählen",
+    "bemerkungen": "Schäden, Besonderheiten, Notizen..."
+  },
+  "WartungReparaturDialog.tsx": {
+    "werkzeug": "Welches Werkzeug?",
+    "massnahme_art": "Art der Maßnahme wählen",
+    "datum_massnahme": "Wann wurde die Maßnahme durchgeführt?",
+    "dienstleister": "z. B. Elektro-Reparatur GmbH",
+    "kosten": "z. B. 45,50",
+    "naechste_wartung": "Nächste Wartung wählen",
+    "zustand_nach_massnahme": "Zustand wählen",
+    "beschreibung": "Was wurde gemacht? Besonderheiten, Austauschteile, Mängel..."
+  }
+}

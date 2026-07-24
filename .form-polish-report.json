@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Mitarbeiterverwaltung": {
+      "placeholders_set": 6,
+      "defaults_keys": ["abteilung"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten-Entity ohne numerische oder Datums-Paare. Keine Berechnungen möglich."
+    },
+    "Werkzeugverwaltung": {
+      "placeholders_set": 11,
+      "defaults_keys": ["kaufdatum", "zustand"],
+      "computed_keys": [],
+      "reason": "Stammdaten mit isolierten Datumsfeldern (Kauf vs. nächste Prüfung – keine Paarbeziehung). Keine Berechnungen."
+    },
+    "Ausleihe & Rückgabe": {
+      "placeholders_set": 8,
+      "defaults_keys": ["ausleihdatum", "geplante_rueckgabe"],
+      "computed_keys": ["_ausleihe_geplante_dauer_tage"],
+      "reason": "Ausleihdatum + geplantes Rückgabedatum als Datumspaarbeziehung (Heuristik a.2). Virtuelle Dauer-Berechnung für Aggregat-Anzeige: dateDiff(ausleihdatum, geplante_rueckgabe, days)."
+    },
+    "Wartung & Reparatur": {
+      "placeholders_set": 8,
+      "defaults_keys": ["datum_massnahme", "kosten"],
+      "computed_keys": [],
+      "reason": "Wartungs-Logistik mit isolierten Datumsfeldern (Maßnahme-Datum vs. nächste Wartung – unabhängige Planung) und manuellem Kosten-Input. Keine Berechnungen."
+    }
+  }
+}

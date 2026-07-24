@@ -1,0 +1,7 @@
+- Mitarbeiterverwaltung (mitarbeiterverwaltung): vorname[string/text], nachname[string/text], personalnummer[string/text], abteilung[lookup/select], telefon[string/tel], email[string/email]
+- Werkzeugverwaltung (werkzeugverwaltung): bezeichnung[string/text], inventarnummer[string/text], kategorie[lookup/select], hersteller[string/text], modell[string/text], seriennummer[string/text], kaufdatum[date/date], naechste_pruefung[date/date], standort[string/text], zustand[lookup/radio], anmerkungen[string/textarea], foto[file]
+- Ausleihe & Rückgabe (ausleihe_&_rueckgabe): mitarbeiter[applookup/select], werkzeug[applookup/select], ausleihdatum[date/datetimeminute], geplante_rueckgabe[date/date], einsatzort[string/text], rueckgabedatum[date/datetimeminute], zustand_rueckgabe[lookup/radio], bemerkungen[string/textarea]
+  → mitarbeiter links to app_id 6a63637c96666d48d1774efb
+  → werkzeug links to app_id 6a636381c03a0fca3a33b85b
+- Wartung & Reparatur (wartung_&_reparatur): werkzeug[applookup/select], massnahme_art[lookup/select], datum_massnahme[date/date], dienstleister[string/text], kosten[number], naechste_wartung[date/date], zustand_nach_massnahme[lookup/radio], beschreibung[string/textarea], dokument[file]
+  → werkzeug links to app_id 6a636381c03a0fca3a33b85b
